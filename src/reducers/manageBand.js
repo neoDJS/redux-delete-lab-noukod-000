@@ -9,7 +9,7 @@ export default function manageBand(state = {
       };
       return { ...state, bands: [...state.bands, band] }
     case 'ADD_BAND':
-      
+
       return {bands: state.bands.filter(todo => todo.id !== action.payload)}
 
     default:
