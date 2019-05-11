@@ -6,7 +6,7 @@ export default function manageBand(state = {
       band = {
         id:  Math.random()*10000000000000000,
         name: action.name
-      }
+      };
       return { ...state, bands: [...state.bands, band] }
 
     default:
